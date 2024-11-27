@@ -7,15 +7,29 @@
 </head>
 <body>
     <h1>Basic Calculator</h1>
+    
+    <!-- Input fields for numbers -->
     <input type="number" id="num1" placeholder="Enter first number">
     <input type="number" id="num2" placeholder="Enter second number">
+
+    <!-- Dropdown to select operation -->
     <select id="operation">
         <option value="add">Add</option>
         <option value="subtract">Subtract</option>
         <option value="multiply">Multiply</option>
         <option value="divide">Divide</option>
     </select>
+
+    <!-- Choose GET or POST -->
+    <select id="method">
+        <option value="get">GET</option>
+        <option value="post">POST</option>
+    </select>
+
+    <!-- Button to trigger calculation -->
     <button onclick="calculate()">Calculate</button>
+
+    <!-- Display the result -->
     <p id="result">Result: </p>
 
     <script src="script.js"></script>
